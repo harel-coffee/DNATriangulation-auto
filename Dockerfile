@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
 			    			libfreetype6-dev \
 			    			libxft-dev
 
-RUN pip install numpy==1.10.4 scipy==0.16.1 matplotlib==1.5.1 sklearn hmmlearn==0.2.0 h5py
+RUN pip install numpy==1.10.4 scipy==0.16.1 matplotlib==1.5.1 scikit-learn=0.18 hmmlearn==0.2.0 h5py
 
 RUN useradd -m admin
 
