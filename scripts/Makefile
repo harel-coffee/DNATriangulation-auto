@@ -56,7 +56,7 @@ scaffold_%:
 	> Output/Scaffold/Data_VCs_$(BINSIZE)_$(c).tab
 
 	# scaffold
-	python3 chromosome_scaffold.py -in Output/Scaffold/Data_VCs_$(BINSIZE)_$(c).tab -out Output/Scaffold/Scaffold_VCs_$(BINSIZE)_$(c) -it 1000 -p 15
+	python chromosome_scaffold.py -in Output/Scaffold/Data_VCs_$(BINSIZE)_$(c).tab -out Output/Scaffold/Scaffold_VCs_$(BINSIZE)_$(c) -it 1000 -p 15
 
 	cat Output/Scaffold/Scaffold_VCs_$(BINSIZE)_$(c)_predpos.tab | \
 	sort -k 2,2g | \

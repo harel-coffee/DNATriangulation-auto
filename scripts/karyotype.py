@@ -62,7 +62,11 @@ def main():
     
     pred_nchr=False
     if nchr==0:
-        nchr=(minnumchr,maxnumchr)
+        ## fix for the new version of triangulation
+        ## a hack rather, because I have no idea what is
+        ## going on here ...
+        #nchr=(minnumchr,maxnumchr)
+        nchr=maxnumchr
         pred_nchr=True
     
     n=d.shape[0]
