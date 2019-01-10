@@ -25,9 +25,14 @@ RUN mkdir /home/admin/scripts
 
 RUN mkdir /home/admin/scripts/Data
 
+RUN mkdir /home/admin/scripts/mypy
+
+
 COPY scripts/* /home/admin/scripts/
 
 COPY data/* /home/admin/scripts/Data/
+
+COPY scripts/mypy/* /home/admin/scripts/mypy/
 
 USER root
 
