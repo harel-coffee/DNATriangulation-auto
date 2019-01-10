@@ -1,11 +1,11 @@
 
 SHELL = zsh
 
-BINSIZE = 200000
+BINSIZE = 1000000
 
 
 data:
-	cat Data/test-200kb.matrix | \
+	cat Data/test-1Mb.matrix | \
 	sed 1d | \
 	sed 's/|/\t/g' | \
 	cut -f 3- | \
