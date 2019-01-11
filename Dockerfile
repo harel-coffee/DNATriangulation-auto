@@ -15,6 +15,7 @@ RUN apt-get update && apt-get install -y \
 			    	       libxft-dev
 
 RUN pip install numpy==1.10.4 scipy==0.16.1 matplotlib==1.5 scikit-learn==0.18 hmmlearn==0.2.0 h5py
+# a hack to trigger matplotlib upgrade and correct installation, no-deps prevents dependencies upgrades ...
 RUN pip install matplotlib==1.5.1 --upgrade --no-deps
 
 
