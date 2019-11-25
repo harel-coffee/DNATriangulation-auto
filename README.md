@@ -23,6 +23,7 @@ docker image rm noam_image
 
 # run stuff from inside
 ```bash
+cd scripts
 make
 make  large_scaffolds
 make  karyotype
