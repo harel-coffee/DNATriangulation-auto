@@ -203,7 +203,7 @@ def main():
             hc=hc[0]
 	
         exec (start_code)
-        exec (main_code)
+        exec(main_code,{'hc':hc,'hr':hr,'d':d,'np':np,'nprint':nprint,'plt':plt,'mypy':mypy,'collections':collections,'it':it})
         exec (end_code)
   
 

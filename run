@@ -1,0 +1,5 @@
+docker stop noam_container
+docker rm noam_container
+docker build -t noam_image .
+docker run -dit --name noam_container noam_image
+docker exec -it noam_container bash

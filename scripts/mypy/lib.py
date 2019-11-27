@@ -482,7 +482,7 @@ def load_matrix(fh,hrows=0,hcols=0,np_dtype='float32',row_block_size=1000,numpy_
         
     # init
 
-    firstline=fh.next()
+    firstline=fh.readline()
 
     fh=it.chain([firstline],fh)
     

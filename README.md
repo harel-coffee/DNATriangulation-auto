@@ -4,7 +4,6 @@ A set of scripts for genome assembly
 
 # dockers ...
 ```bash
-cd scripts
 # build image
 docker build -t noam_image .
 # run it ...
@@ -23,6 +22,7 @@ docker image rm noam_image
 
 # run stuff from inside
 ```bash
+cd scripts
 make
 make  large_scaffolds
 make  karyotype
