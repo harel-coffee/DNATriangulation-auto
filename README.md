@@ -1,5 +1,6 @@
 # DNATriangulation
-A set of scripts for genome assembly
+A set of scripts for de-novo genome assembly. For more detail read wiki:
+https://github.com/NoamKaplan/dna-triangulation/wiki
 
 
 # dockers ...
@@ -21,8 +22,9 @@ docker image rm noam_image
 
 
 
-# run stuff from inside
+# run stuff from inside container
 ```bash
+docker exec -it container_name bash
 cd scripts
 make
 make  large_scaffolds
