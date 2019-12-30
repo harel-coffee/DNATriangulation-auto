@@ -33,7 +33,7 @@ make  scaffold
 make  scaffold_wrap
 ```
 
-#Copy output data from container to host
+Copy output data from container to host
 ```bash
 docker cp <containerId>:/file/path/within/container /host/path/target
 ```
